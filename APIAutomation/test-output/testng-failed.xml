@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.api.automation.TC_005_UsingdbJSON">
+      <class name="test.api.deletemethod.TC_006_DELETEMethodObject">
         <methods>
-          <include name="validate_TC_005_UsingdbJSON"/>
+          <include name="validate_TC_006_PATCHMethodObject"/>
         </methods>
-      </class> <!-- test.api.automation.TC_005_UsingdbJSON -->
+      </class> <!-- test.api.deletemethod.TC_006_DELETEMethodObject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

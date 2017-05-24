@@ -14,13 +14,13 @@ import com.jayway.restassured.http.ContentType;
 
 			// Using BDD methods of rest assured
 			PostMessage postObj = new PostMessage();
-			postObj.setId(7);
+			postObj.setId(3);
 			postObj.setAuthor("SureshUpdated");
 			postObj.setTitle("Geetha");
 			
 			given().contentType(ContentType.JSON)
 			.body(postObj)
-			.when().put("http://localhost:3000/posts/7")
+			.when().put("http://localhost:3000/posts/3")
 			.then().statusCode(200).contentType(ContentType.JSON);
 		}
 	}
