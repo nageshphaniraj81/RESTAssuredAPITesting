@@ -86,3 +86,5 @@ Example :
 4. Start JSON Server     json-server --watch db.json
    
    }
+   
+PUT URL : http://localhost:3000/posts/1
