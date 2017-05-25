@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.api.deletemethod.TC_006_DELETEMethodObject">
+      <class name="api.automation.JIRA.Testcase_001">
         <methods>
-          <include name="validate_TC_006_PATCHMethodObject"/>
+          <include name="tcase1"/>
         </methods>
-      </class> <!-- test.api.deletemethod.TC_006_DELETEMethodObject -->
+      </class> <!-- api.automation.JIRA.Testcase_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

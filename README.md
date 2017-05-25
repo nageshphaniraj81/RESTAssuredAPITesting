@@ -88,3 +88,48 @@ Example :
    }
    
 PUT URL : http://localhost:3000/posts/1
+
+JIRA Download: https://br.atlassian.com/software/jira/download
+http://localhost:8080/secure/admin/user/ViewUser.jspa?
+
+http://localhost:8080/secure/WelcomeToJIRA.jspa
+
+Key : IMS
+User for testing : nageshphaniraj81@gmail.com
+SD5843col**
+https://docs.atlassian.com/jira/REST/6.1.7/
+http://localhost:8080/rest/api/2/issue/IMS-1
+
+----------------------------------------------------------------------------------------------------
+
+ReportNG Reporting :
+It needs :velocity-dep.jar, reporting.jar, guice.jar
+
+Dependencies:
+<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+Need to add Listners:
+		
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="api.automation.JIRA.Testcase_001" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->		
+		
