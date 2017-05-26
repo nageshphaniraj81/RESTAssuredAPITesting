@@ -132,4 +132,45 @@ Need to add Listners:
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->		
-		
+
+----------------------------------------------------------------------------------------------------
+
+Excel  Reporting :
+ To copy JAR files from http://automationtesting.in/generate-excel-report-in-selenium-using-testng/ 
+ 
+use the import 
+import org.automationtesting.excelreport.Xl;
+
+	@AfterSuite
+	public void generateReport() throws Exception{
+		Xl.generateReport("Report_Excel.xlsx");
+	}
+	
+--------------------------------------------------------------------------------------------------
+POST MAN
+
+Difference between Endpoint and Resource
+---------------------------------------------------------------------------------------------------
+
+In a link , the string till .com/.org/.in is end point and anything after that is a resource
+
+Test cases with Postman: Free URI :
+
+http://services.groupkt.com/country/get/all
+http://services.groupkt.com/country/get/iso2code/IN
+http://www.thomas-bayer.com/sqlrest/CUSTOMER/3/
+http://www.thomas-bayer.com/sqlrest/CUSTOMER/
+http://www.omdbapi.com/?t=Spiderman&y=&plot=short&r=json
+
+To start server on different port:
+
+--server.port=8085
+
+--------------------------------------------------------------------------------------------------
+JSON Viewer
+-------------------------------------------------------------------------------------------
+http://jsonviewer.stack.hu/
+
+
+
+

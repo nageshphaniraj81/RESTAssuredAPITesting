@@ -18,8 +18,9 @@ public class TC_006_POSTMethodObject {
 			postObj.setId(7);
 			postObj.setAuthor("Nagesh");
 			postObj.setTitle("Geetha");
-			given().contentType(ContentType.JSON).body(postObj).when().post("http://localhost:3000/posts").then()
-					.statusCode(201).contentType(ContentType.JSON);
+			given().contentType(ContentType.JSON).body(postObj)
+			.when().post("http://localhost:3000/posts")
+			.then().statusCode(201).contentType(ContentType.JSON);
 		}
 	}
 
